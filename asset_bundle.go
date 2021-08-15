@@ -11,9 +11,11 @@ import (
 	"path/filepath"
 )
 
+// FI 文件头部标识
 var FI = []byte("GoAB")
 
 type (
+	// AssetBundle 资源包
 	AssetBundle struct {
 		Size    int64
 		Head    []byte
@@ -23,6 +25,7 @@ type (
 		fileMap map[string]ABFileInfo
 		offset  int
 	}
+	// ABFileInfo 资源包文件信息
 	ABFileInfo struct {
 		Path    string `json:"p"`
 		ModTime int64  `json:"t"`
@@ -31,6 +34,7 @@ type (
 	}
 )
 
+// NewAssetBundle 创建一个新的资源包
 func NewAssetBundle(name string) (*AssetBundle, error) {
 	f, err := os.Create(name)
 	if err != nil {
@@ -42,10 +46,12 @@ func NewAssetBundle(name string) (*AssetBundle, error) {
 	return &ab, nil
 }
 
+// Close 关闭资源包
 func (ab *AssetBundle) Close() error {
 	return ab.file.Close()
 }
 
+// Bundle 捆绑指定目录的资源
 func (ab *AssetBundle) Bundle(root string, version uint16) error {
 	var err error
 	if ab.fileMap == nil {
@@ -119,6 +125,7 @@ func (ab *AssetBundle) Bundle(root string, version uint16) error {
 	return nil
 }
 
+// OpenAssetBundle 从文件打开资源包
 func OpenAssetBundle(name string) (*AssetBundle, error) {
 	f, err := os.Open(name)
 	if err != nil {
