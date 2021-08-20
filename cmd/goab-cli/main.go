@@ -46,10 +46,10 @@ func pack() *cli.Command {
 				Required: true,
 			},
 			&cli.UintFlag{
-				Name:        "version",
-				Aliases:     []string{"v"},
-				Usage:       "Bundle version",
-				DefaultText: "1000",
+				Name:    "version",
+				Aliases: []string{"v"},
+				Usage:   "Bundle version",
+				Value:   1000,
 			},
 		},
 		ArgsUsage: "BundleFolder",
@@ -60,9 +60,6 @@ func pack() *cli.Command {
 			output := ctx.String("output")
 			folder := ctx.Args().Get(0)
 			version := ctx.Uint("version")
-			if version == 0 {
-				version = 1000
-			}
 			_, err := os.Stat(output)
 			if err == nil {
 				_ = os.Remove(output)
