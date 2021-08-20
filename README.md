@@ -5,6 +5,18 @@
 
 Just like [asar](https://github.com/electron/asar) 😂
 
+## Usage
+
+```shell
+go get -u github.com/project-vrcat/go-asset-bundle
+```
+
+Or install the CLI tools
+
+```shell
+go install github.com/project-vrcat/go-asset-bundle/cmd/goab-cli
+```
+
 ## Example
 
 [example](example/main.go)
@@ -17,6 +29,12 @@ defer ab.Close()
 
 var version uint16 = 1000
 ab.Bundle("./public", version)
+```
+
+Or use the CLI tool
+
+```shell
+goab-cli pack -o="./public.ab" -v=1000 ./public
 ```
 
 ### Use an AssetBundle
