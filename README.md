@@ -1,10 +1,13 @@
 # Go Asset Bundle
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/project-vrcat/go-asset-bundle?style=flat-square)](https://goreportcard.com/report/github.com/project-vrcat/go-asset-bundle)
+[![License](https://img.shields.io/github/license/project-vrcat/go-asset-bundle?style=flat-square)](./LICENSE)
+
 Just like [asar](https://github.com/electron/asar) 😂
 
 ## Example
 
-[examples](example/main.go)
+[example](example/main.go)
 
 ### Create an AssetBundle
 
@@ -12,7 +15,7 @@ Just like [asar](https://github.com/electron/asar) 😂
 ab, _ := bundle.NewAssetBundle("./public.ab")
 defer ab.Close()
 
-version := 1000
+var version uint16 = 1000
 ab.Bundle("./public", version)
 ```
 
@@ -30,6 +33,12 @@ fmt.Println("http server started on", addr)
 http.ListenAndServe(addr, nil)
 ```
 
+## Thanks
+
+Thanks to [JetBrains](https://jb.gg/OpenSource) for the open source license(s).
+
+[![JetBrains Logo](https://raw.githubusercontent.com/project-vrcat/VRChatConfigurationEditor/main/images/jetbrains.svg)](https://jb.gg/OpenSource)
+
 ## License
 
-[MIT](./LICENSE)
+Code is distributed under [MIT](./LICENSE) license, feel free to use it in your proprietary projects as well.
