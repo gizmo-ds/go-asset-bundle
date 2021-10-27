@@ -14,7 +14,7 @@ go get -u github.com/project-vrcat/go-asset-bundle
 Or install the CLI tools
 
 ```shell
-go install github.com/project-vrcat/go-asset-bundle/cmd/goab-cli
+go install github.com/project-vrcat/go-asset-bundle/cmd/goab-cli@latest
 ```
 
 ## Example
