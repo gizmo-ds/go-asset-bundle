@@ -5,7 +5,7 @@ import (
 	"mime"
 	"net/http"
 
-	bundle "github.com/project-vrcat/go-asset-bundle"
+	bundle "github.com/GizmoOAO/go-asset-bundle"
 )
 
 func init() {

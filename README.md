@@ -1,7 +1,7 @@
 # Go Asset Bundle
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/project-vrcat/go-asset-bundle?style=flat-square)](https://goreportcard.com/report/github.com/project-vrcat/go-asset-bundle)
-[![License](https://img.shields.io/github/license/project-vrcat/go-asset-bundle?style=flat-square)](./LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/GizmoOAO/go-asset-bundle?style=flat-square)](https://goreportcard.com/report/github.com/GizmoOAO/go-asset-bundle)
+[![License](https://img.shields.io/github/license/GizmoOAO/go-asset-bundle?style=flat-square)](./LICENSE)
 
 Just like [asar](https://github.com/electron/asar) 😂
 
