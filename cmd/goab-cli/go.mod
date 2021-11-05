@@ -1,9 +1,9 @@
-module github.com/project-vrcat/go-asset-bundle/cmd/goab-cli
+module github.com/GizmoOAO/go-asset-bundle/cmd/goab-cli
 
 go 1.17
 
 require (
-	github.com/project-vrcat/go-asset-bundle v1.0.0
+	github.com/GizmoOAO/go-asset-bundle v1.0.1
 	github.com/urfave/cli/v2 v2.3.0
 )
 

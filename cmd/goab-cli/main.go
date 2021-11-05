@@ -9,7 +9,7 @@ import (
 	"os"
 	"path/filepath"
 
-	bundle "github.com/project-vrcat/go-asset-bundle"
+	bundle "github.com/GizmoOAO/go-asset-bundle"
 	"github.com/urfave/cli/v2"
 )
 
