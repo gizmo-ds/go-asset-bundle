@@ -8,13 +8,13 @@ Just like [asar](https://github.com/electron/asar) 😂
 ## Usage
 
 ```shell
-go get -u github.com/project-vrcat/go-asset-bundle
+go get -u github.com/GizmoOAO/go-asset-bundle
 ```
 
 Or install the CLI tools
 
 ```shell
-go install github.com/project-vrcat/go-asset-bundle/cmd/goab-cli@latest
+go install github.com/GizmoOAO/go-asset-bundle/cmd/goab-cli@latest
 ```
 
 ## Example
