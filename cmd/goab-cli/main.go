@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"log"
 	"os"
 	"path/filepath"
 
-	bundle "github.com/GizmoOAO/go-asset-bundle"
+	bundle "github.com/gizmo-ds/go-asset-bundle"
 	"github.com/urfave/cli/v2"
 )
 
@@ -141,11 +141,11 @@ func extract() *cli.Command {
 				if err != nil {
 					return err
 				}
-				data, err := ioutil.ReadAll(f2)
+				data, err := io.ReadAll(f2)
 				if err != nil {
 					return err
 				}
-				if err = ioutil.WriteFile(filename, data, 0666); err != nil {
+				if err = os.WriteFile(filename, data, 0666); err != nil {
 					return err
 				}
 			}
@@ -195,11 +195,11 @@ func extractFile() *cli.Command {
 			if err != nil {
 				return err
 			}
-			data, err := ioutil.ReadAll(f)
+			data, err := io.ReadAll(f)
 			if err != nil {
 				return err
 			}
-			if err = ioutil.WriteFile(filename, data, 0666); err != nil {
+			if err = os.WriteFile(filename, data, 0666); err != nil {
 				return err
 			}
 			return nil

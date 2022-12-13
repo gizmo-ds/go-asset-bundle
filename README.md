@@ -1,20 +1,20 @@
 # Go Asset Bundle
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/GizmoOAO/go-asset-bundle?style=flat-square)](https://goreportcard.com/report/github.com/GizmoOAO/go-asset-bundle)
-[![License](https://img.shields.io/github/license/GizmoOAO/go-asset-bundle?style=flat-square)](./LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gizmo-ds/go-asset-bundle?style=flat-square)](https://goreportcard.com/report/github.com/gizmo-ds/go-asset-bundle)
+[![License](https://img.shields.io/github/license/gizmo-ds/go-asset-bundle?style=flat-square)](./LICENSE)
 
 Just like [asar](https://github.com/electron/asar) 😂
 
 ## Usage
 
 ```shell
-go get -u github.com/GizmoOAO/go-asset-bundle
+go get -u github.com/gizmo-ds/go-asset-bundle
 ```
 
 Or install the CLI tools
 
 ```shell
-go install github.com/GizmoOAO/go-asset-bundle/cmd/goab-cli@latest
+go install github.com/gizmo-ds/go-asset-bundle/cmd/goab-cli@latest
 ```
 
 ## Example
